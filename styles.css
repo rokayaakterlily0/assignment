@@ -1,0 +1,37 @@
+/* Navigation start  */
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    gap: 50px;
+    font-weight: 600;
+    color: rgb(110, 111, 111);
+    cursor: pointer;
+}
+.common-btn{
+    background-color:rgb(46, 46, 233);
+    color: white;
+    font-weight: bold;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.common-btn:hover{
+    background-color: rgb(95, 95, 195);
+}
+
+/* navigation end  */
+/* banner section start  */
+header{
+    background-image: url(./images/banner.jpg);
+    height: 871px;
+    font-weight: 1551px;
+    background-repeat: no-repeat;
+}
