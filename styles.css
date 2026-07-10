@@ -1,16 +1,23 @@
 /* Navigation start  */
-
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+   font-family: "Inter", sans-serif;
+}
 nav{
     display: flex;
     justify-content: space-around;
     align-items: center;
     background-color: white;
+    padding: 18px 8%;
 }
 nav ul{
     display: flex;
     list-style: none;
     gap: 50px;
-    font-weight: 600;
+    font-weight: 500;
     color: rgb(110, 111, 111);
     cursor: pointer;
 }
@@ -30,8 +37,77 @@ nav ul{
 /* navigation end  */
 /* banner section start  */
 header{
-    background-image: url(./images/banner.jpg);
-    height: 871px;
-    font-weight: 1551px;
+    background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('./images/banner.jpg');
+    height:90vh;
     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; 
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.hero{
+    color: white;
+    text-align: center;
+    gap: 20px;
+    max-width: 700px;
+}
+.hero h1{
+    font-size: 64px;
+}
+.hero-btn{
+    margin-left: 37%;
+}
+/* banner section end  */
+/* speakers section start */
+.speaker{
+    padding:50px 10%;
+}
+.speaker h1{
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+.speaker-box{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+.box img{
+    width: 100%;
+    display: block;
+}
+.box{
+    border: 1px solid rgb(164, 161, 161);
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: white;
+}
+.txt{
+    padding: 27px;
+}
+.txt h5{
+    color: rgb(46, 46, 233);
+    margin-bottom: 4px;
+}
+.txt p{
+    color:rgb(110, 111, 111);
+    font-size: 15px;
+    margin-top: 5px;
+}
+/* speakers section end  */
+/* pricing section start */
+.price{
+    padding: 40px 15%;
+}
+.price h1{
+    text-align: center;
+    font-size: 36px;
+}
+.price p{
+    text-align: center;
+}
+.price-box{
+    display: flex;
+    gap: 40px;
 }
