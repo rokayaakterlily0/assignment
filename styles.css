@@ -78,7 +78,7 @@ header{
     display: block;
 }
 .box{
-    border: 1px solid rgb(164, 161, 161);
+    border: 1px solid #e5e7eb;
     border-radius: 10px;
     overflow: hidden;
     background-color: white;
@@ -96,18 +96,76 @@ header{
     margin-top: 5px;
 }
 /* speakers section end  */
-/* pricing section start */
+/* pricing section start  */
 .price{
-    padding: 40px 15%;
+    padding: 70px 15%;
 }
 .price h1{
     text-align: center;
     font-size: 36px;
+    margin-bottom: 15px;
 }
-.price p{
+.price-p{
     text-align: center;
+    font-size: 13px;
+    color: rgb(110, 111, 111);
 }
 .price-box{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 40px;
+    margin-top: 20px;
 }
+.price-box div{
+    border: 1px solid #e5e7eb;
+    padding: 30px;
+    border-radius: 12px;
+}
+.black{
+    font-size: 13px;
+    color: rgb(110, 111, 111);
+    margin-bottom: 10px;
+}
+.price-box ul li{
+    margin: 10px;
+    font-size: 12px;
+}
+.pro{
+    background-color: #000102;
+    color: white;
+}
+.white{
+    font-size: 13px;
+    color: white;
+    margin-bottom: 10px;
+}
+.btn-design{
+    background-color:white;
+    border: 2px solid rgb(46, 46, 233);
+    color: rgb(46, 46, 233);
+    font-weight: bold;
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.btn-pro{
+    background-color:rgb(46, 46, 233);
+    /* border-color:rgb(46, 46, 233) ; */
+    border: none;
+    color:white;
+    font-weight: bold;
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.btn-design:hover{
+    background-color: rgb(25, 139, 239);
+}
+.btn-pro:hover{
+    background-color: rgb(25, 139, 239);
+}
+/* pricing section end  */
