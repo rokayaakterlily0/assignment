@@ -1,28 +1,37 @@
 /* Navigation start  */
-*{
+* {
     margin: 0;
     padding: 0;
+    box-sizing:border-box;
 }
-body{
-   font-family: "Inter", sans-serif;
+
+body {
+    font-family: "Inter", sans-serif;
 }
-nav{
+
+nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
     background-color: white;
     padding: 18px 8%;
 }
-nav ul{
+
+nav ul {
     display: flex;
     list-style: none;
     gap: 50px;
     font-weight: 500;
-    color: rgb(110, 111, 111);
     cursor: pointer;
 }
-.common-btn{
-    background-color:rgb(46, 46, 233);
+
+.menu ul li a {
+    text-decoration: none;
+    color: rgb(110, 111, 111);
+}
+
+.common-btn {
+    background-color: rgb(46, 46, 233);
     color: white;
     font-weight: bold;
     padding: 15px 40px;
@@ -30,117 +39,142 @@ nav ul{
     border-radius: 10px;
     cursor: pointer;
 }
-.common-btn:hover{
+
+.common-btn:hover {
     background-color: rgb(95, 95, 195);
 }
 
 /* navigation end  */
 /* banner section start  */
-header{
-    background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('./images/banner.jpg');
-    height:90vh;
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./images/banner.jpg');
+    height: 90vh;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center; 
+    background-position: center;
     display: grid;
     justify-content: center;
     align-items: center;
 }
-.hero{
+
+.hero {
     color: white;
     text-align: center;
-    gap: 20px;
     max-width: 700px;
 }
-.hero h1{
+
+.hero h1 {
     font-size: 64px;
 }
-.hero-btn{
-    margin-left: 37%;
+
+.hero-btn {
+    text-align: center;
 }
+
 /* banner section end  */
 /* speakers section start */
-.speaker{
-    padding:50px 10%;
+.speaker {
+    padding: 50px 10%;
 }
-.speaker h1{
+
+.speaker h2 {
     text-align: center;
-    font-size: 36px;
+    font-size: 40px;
     margin-bottom: 40px;
 }
-.speaker-box{
+
+.speaker-box {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 40px;
 }
-.box img{
+
+.box img {
     width: 100%;
     display: block;
 }
-.box{
+
+.box {
     border: 1px solid #e5e7eb;
     border-radius: 10px;
     overflow: hidden;
     background-color: white;
 }
-.txt{
+
+.txt {
     padding: 27px;
 }
-.txt h5{
+
+.txt h5 {
     color: rgb(46, 46, 233);
     margin-bottom: 4px;
 }
-.txt p{
-    color:rgb(110, 111, 111);
+
+.txt p {
+    color: rgb(110, 111, 111);
     font-size: 15px;
     margin-top: 5px;
 }
+
 /* speakers section end  */
 /* pricing section start  */
-.price{
+.price {
     padding: 70px 15%;
 }
-.price h1{
+
+.price h2 {
     text-align: center;
-    font-size: 36px;
+    font-size: 40px;
     margin-bottom: 15px;
 }
-.price-p{
+
+.price-p {
     text-align: center;
     font-size: 13px;
     color: rgb(110, 111, 111);
 }
-.price-box{
+
+.price-box {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 40px;
     margin-top: 20px;
 }
-.price-box div{
+
+.price-box h3 {
+    font-size: 30px;
+}
+
+.price-box div {
     border: 1px solid #e5e7eb;
     padding: 30px;
     border-radius: 12px;
 }
-.black{
+
+.black {
     font-size: 13px;
     color: rgb(110, 111, 111);
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
-.price-box ul li{
+
+.price-box ul li {
     margin: 10px;
     font-size: 12px;
 }
-.pro{
+
+.pro {
     background-color: #000102;
     color: white;
 }
-.white{
+
+.white {
     font-size: 13px;
     color: white;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
-.btn-design{
-    background-color:white;
+
+.btn-design {
+    background-color: white;
     border: 2px solid rgb(46, 46, 233);
     color: rgb(46, 46, 233);
     font-weight: bold;
@@ -150,11 +184,12 @@ header{
     cursor: pointer;
     margin-top: 10px;
 }
-.btn-pro{
-    background-color:rgb(46, 46, 233);
+
+.btn-pro {
+    background-color: rgb(46, 46, 233);
     /* border-color:rgb(46, 46, 233) ; */
     border: none;
-    color:white;
+    color: white;
     font-weight: bold;
     width: 100%;
     padding: 10px;
@@ -162,40 +197,177 @@ header{
     cursor: pointer;
     margin-top: 10px;
 }
-.btn-design:hover{
+
+.btn-design:hover {
     background-color: rgb(25, 139, 239);
 }
-.btn-pro:hover{
+
+.btn-pro:hover {
     background-color: rgb(25, 139, 239);
 }
+
 /* pricing section end  */
-/* footer start  */
-footer{
-    background-color: black;
-    padding:  40px 100px;
-    color: white;
-    
+/* AI section start  */
+/* stats section  */
+.stats {
+    width: 75%;
+    margin: 70px auto;
 }
-.foot-icon{
+
+.stats-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.stats-title h2 {
+    font-size: 40px;
+    color: #111827;
+    margin: 20px 0;
+}
+
+.stats-title p {
+    width: 600px;
+    margin: auto;
+    color: #6B7280;
+    line-height: 30px;
+    font-size: 18px;
+}
+
+.stats-row {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    margin-bottom: 30px;
+}
+
+.second-row {
+    justify-content: center;
+    gap: 35px;
+}
+
+.stats-box {
+    width: 300px;
+    height: 170px;
+    background: #fff;
+    border: 1px solid #E5E7EB;
+    border-radius: 18px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, .06);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    padding: 20px;
+}
+
+.stats-box h3 {
+    font-size: 48px;
+    color: #4F46E5;
+    margin-bottom: 15px;
+}
+
+.stats-box p {
+    color: #6B7280;
+    line-height: 28px;
+    font-size: 17px;
+}
+
+/* stat section  */
+/* signup section start  */
+.newsletter {
+    width: 80%;
+    margin: 100px auto;
+}
+
+.newsletter-box {
+    background: #EEF4FF;
+    border-radius: 25px;
+    padding: 60px;
+    box-shadow: 0 30px 40px rgba(0, 0, 0, .08);
+}
+
+.newsletter-box h2 {
+    font-size: 40px;
+    color: #111827;
+    margin-bottom: 20px;
+}
+
+.newsletter-box p {
+    color: #6B7280;
+    line-height: 28px;
+    font-size: 17px;
+    margin-bottom: 30px;
+}
+
+.newsletter-form {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 18px;
+}
+
+.newsletter-form input {
+    width: 320px;
+    padding: 16px;
+    border: 1px solid #D1D5DB;
+    border-radius: 10px;
+    font-size: 16px;
+    outline: none;
+}
+
+.newsletter-form button {
+
+    padding: 16px 32px;
+    border: none;
+    border-radius: 10px;
+    background: #4F46E5;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.newsletter-box small {
+    color: #6B7280;
+    font-size: 14px;
+}
+
+/* signup section end  */
+/* AI section end  */
+/* footer start  */
+footer {
+    background-color: black;
+    padding: 40px 100px;
+    color: white;
+
+}
+
+.foot-icon {
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
-    
+
 }
-.foot-child{
+
+.foot-child {
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
 }
-.foot-child ul{
+
+.foot-child ul {
     list-style: none;
     display: flex;
     gap: 30px;
     font-size: 14px;
     cursor: pointer;
 }
-.icons{
+
+.icons {
     font-size: 20px;
-    color: white;
 }
+.icons a{
+    color: rgb(46, 46, 233);
+}
+
 /* footer end  */
