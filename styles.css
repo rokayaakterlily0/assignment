@@ -280,7 +280,7 @@ header {
 
 .stats-box h3 {
     font-size: 48px;
-    color: #4F46E5;
+    color: rgb(46, 46, 233);
     margin-bottom: 15px;
 }
 
@@ -337,11 +337,15 @@ header {
     padding: 16px 32px;
     border: none;
     border-radius: 10px;
-    background: #4F46E5;
+    background: rgb(46, 46, 233);
     color: white;
     font-size: 16px;
     cursor: pointer;
 }
+.newsletter-form button:hover{
+    background-color: rgb(25, 139, 239);
+}
+
 
 .newsletter-box small {
     color: #6B7280;
