@@ -175,6 +175,10 @@ header {
     font-size: 12px;
 }
 
+.price-box ul li::marker {
+    color: rgb(46, 46, 233);
+}
+
 .pro {
     background-color: #000102;
     color: white;
